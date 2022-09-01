@@ -1,0 +1,26 @@
+{
+  "name": "mywebsite",
+  "version": "1.0.0",
+  "description": "My Personal Website",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChancellorO/MyWebsite.git"
+  },
+  "author": "Chancellor Richey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChancellorO/MyWebsite/issues"
+  },
+  "homepage": "https://github.com/ChancellorO/MyWebsite#readme",
+  "dependencies": {
+    "dotenv": "^16.0.2",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "mongoose": "^6.5.4",
+    "nodemon": "^2.0.19"
+  }
+}

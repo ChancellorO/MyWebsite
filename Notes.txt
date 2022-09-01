@@ -1,0 +1,22 @@
+Steps on how to create your own website
+
+#1 INITIALIZING THE REPOSITORY
+First create a "app.js" file within the directory
+This file will start the website
+
+Next configure the package.json, to do so run
+`npm init` 
+In the Terminal in respect to the Website's directory
+
+Next we must install the dependencies, for my application I will be using express, dotenv, ejs, mongoose, and nodemon.
+`npm install express ejs nodemon mongoose dotenv`
+
+You will notice a directory "node_modules" will appear. This is a directory where all of npm packages are stored and referrenced. 
+
+For clarification, npm stands for "node package manager", which directly works with nodejs, given the name.
+
+#2 DISPLAYING YOUR FIRST PAGE 
+For this project, I've chose to use ejs as a way to manage and display my html files, so I have created a views directory
+as well as the "MainPage.ejs" file
+
+

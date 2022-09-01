@@ -1,0 +1,17 @@
+<html lang="en">
+    <%- include('./partials/head') %>
+    <body>
+        <%- include ('./partials/nav') %>
+        <div class="create-blog content">
+            <form action="/questions" method="POST">
+              <label for="title">質問:</label>
+              <input type="text" id="title" name="title" required>
+              <label for="subject">主語:</label>
+              <input type="text" id="subject" name="subject" required>
+              <label for="contents">内容:</label>
+              <textarea id="contents" name="contents" required></textarea>
+              <button>Submit</button>
+            </form>
+          </div>
+    </body>
+</html>

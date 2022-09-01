@@ -1,0 +1,18 @@
+<html lang="en">
+    <%- include('./partials/head') %>
+    <body>
+        <%- include ('./partials/nav') %>
+        <div>
+            <% if (questions.length > 0) { %>
+                <% questions.forEach(question => { %>
+                  <a class="single" href="/questions/<%= question._id %>">
+                    <h3 class="title"><%= question.title %></h3>
+                    <p class="subject"><%= question.subject %></p>
+                  </a>
+                <% }) %>
+              <% } else { %>
+                <p>There are no questions to display...</p>
+              <% } %>
+        </div>
+    </body>
+</html>
