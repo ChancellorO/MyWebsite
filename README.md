@@ -12,5 +12,5 @@ You are almost ready to start the website, last step is to run <br />
 `npm start` <br />
 This will begin the website! <br />
 To view the website, simply visit localhost:3000 <br />
-Enjoy! <br />
+I hope you Enjoy! <br />
 
