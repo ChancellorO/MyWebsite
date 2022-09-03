@@ -13,6 +13,7 @@ app = express()
 
 /* Setup Middleware */
 app.use(express.static("public"))
+app.use(express.static("imgs"))
 app.use(express.urlencoded({ extended: true })) // This is for using req.body 
 
 /* Sets up the view engine as ejs*/
@@ -34,16 +35,9 @@ mongoose.connect(process.env.URI)
 
 /* Routes */
 app.get('/', (req, res) => {
-    Question.find().
-    then(result => {
-        res.render('MainPage', {title: 'Main Page', questions: result})
-        console.log(result)
-    })
-    .catch((err) => {
-        console.log(err)
-    })
+    res.render('index', { title: 'MainPage' })
 })
-
+/* Question Route Depracated */
 app.use('/questions', QuestionRouter)
 
 app.use((req,res) => {
